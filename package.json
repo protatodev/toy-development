@@ -6,7 +6,7 @@
   "scripts": {
     "go": "go run cmd/main.go",
     "test-go": "go test cmd/main_test.go",
-    "serve": "live-server public/",
+    "test": "mocha",
     "build": "webpack",
     "dev-server": "webpack-dev-server --open"
   },
@@ -25,5 +25,8 @@
     "webpack": "3.1.0",
     "webpack-dev-server": "2.5.1"
   },
-  "author": "protatodev <thaddonaghue@yahoo.com>"
+  "author": "protatodev <thaddonaghue@yahoo.com>",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
 }

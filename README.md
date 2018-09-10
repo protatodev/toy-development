@@ -16,7 +16,7 @@ This project features a backend, developed using the Go programming language, an
 * Clone the project repo.
 * Run `npm install` from project directory.
 * Run `npm run go` to start the Go server.
-* Run `npm run start` for a webpack dev server.  It should bring up the page automatically, but navigate to `http://localhost:8080/` if it does not. The app will automatically reload if you change any of the source files.
+* Run `npm run dev-server` for a webpack dev server.  It should bring up the page automatically, but navigate to `http://localhost:8080/` if it does not. The app will automatically reload if you change any of the source files.
 
 ## Testing Instructions
 
