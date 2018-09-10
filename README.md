@@ -20,7 +20,8 @@ This project features a backend, developed using the Go programming language, an
 
 ## Testing Instructions
 
-* From the project root, run `npm test-go`
+* [FOR GO BACKEND TESTING] From the project root, run `npm test-go`
+* [FOR FRONT END TESTING] From the project root, run `npm test`
 
 ## Technologies Used
 
