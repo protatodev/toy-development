@@ -18,6 +18,10 @@ This project features a backend, developed using the Go programming language, an
 * Run `npm run go` to start the Go server.
 * Run `npm run start` for a webpack dev server.  It should bring up the page automatically, but navigate to `http://localhost:8080/` if it does not. The app will automatically reload if you change any of the source files.
 
+## Testing Instructions
+
+* From the project root, run `npm test-go`
+
 ## Technologies Used
 
 * HTML5
