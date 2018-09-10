@@ -1,19 +1,18 @@
-import '../src/components/ToyApp';
 import ToyApp from '../src/components/ToyApp';
 
-let apiArray;
+describe('ToyApp', function() {
+  let apiArray;
 
-beforeEach(function() {
-  const promise = new ToyApp().getSequence(5);
-  promise.then(apiData => {
-    apiArray = apiData;
-  }).catch(err => {
-    console.log(err.statusText);
+  beforeEach(function() {
+    const promise = new ToyApp().getSequence(5);
+    promise.then(apiData => {
+      apiArray = apiData;
+    }).catch(err => {
+      console.log(err.statusText);
+    });
   });
-});
 
-describe('#length', function() {
-  it('respond with matching records', function() {
+  it('respond with matching number of number records', function() {
     return apiArray.should.eventually.have.length(5);
   });
 });
