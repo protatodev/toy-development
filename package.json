@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "go": "go run cmd/main.go",
+    "test-go": "go test cmd/main_test.go",
     "serve": "live-server public/",
     "build": "webpack",
     "dev-server": "webpack-dev-server"
