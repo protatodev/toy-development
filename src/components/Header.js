@@ -8,7 +8,7 @@ const Header = (props) => (
 );
 
 Header.defaultProps = {
-  title: 'Indecision'
+  title: 'Fibonacci Sequence Evaluator'
 };
 
 export default Header;

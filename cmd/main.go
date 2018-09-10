@@ -28,6 +28,7 @@ type Sequence struct {
 
 // return fibonacci sequence
 func createFibonacci(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
 	params := mux.Vars(r)
 	digits, _ := strconv.Atoi(params["id"])
@@ -61,5 +62,5 @@ func main() {
 	router := mux.NewRouter()
 
 	router.HandleFunc("/fibonacci/{id}", createFibonacci)
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":8000", router))
 }
