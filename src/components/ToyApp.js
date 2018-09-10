@@ -1,6 +1,10 @@
 import React from 'react';
 import Header from './Header';
 
+const tableStyles = () => {
+  border: '1px solid black';
+}
+
 class ToyApp extends React.Component {
   state = {
     sequence: this.props.sequence
@@ -45,7 +49,13 @@ class ToyApp extends React.Component {
           <input type="number" name="sequence" placeholder="e.g, 10"/>
           <button type="submit">View Fibonacci Sequence</button>
         </form>
-        {this.state.sequence.length > 0 && this.state.sequence.map((number, index) => <p key={index}>{number}</p>)}
+        <table style={tableStyles}>
+          <tbody>
+            <tr>
+              {this.state.sequence.length > 0 && this.state.sequence.map((number, index) => <td key={index}>{number}</td>)}
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   }
